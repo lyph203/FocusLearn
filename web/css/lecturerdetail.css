@@ -1,0 +1,42 @@
+.main-content{
+    padding-top: 3rem;
+}
+
+.profile{
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    padding: 2rem;
+    border-radius: 20px; 
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.avatar{
+    margin-bottom: 30px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.contain-info{
+    margin: 0 auto;
+}
+
+.contain-info h4{
+    margin-bottom: 10px;
+}
+
+.contain-info h3{
+    margin-bottom: 10px;
+}
+
+.contain-info h1{
+    margin-bottom: 20px;
+}
+
+.statistics td{
+    padding-right: 2rem;
+}
+
+.description{
+    width: 90%;
+}

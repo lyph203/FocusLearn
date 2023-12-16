@@ -1,0 +1,94 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 27, 2023, 9:06:09 AM
+    Author     : Admin
+*/
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1;
+    /* Fill the remaining space */
+    padding: 20px;
+}
+
+.contain-certificate {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.user {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+    background-color: #cccbcb;
+    padding: 20px 50px;
+    
+}
+
+.user img {
+    height: 70px;
+    width: 70px; object-fit: cover; 
+    border-radius: 50%;
+}
+
+.course {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+}
+
+.course img {
+    width: 100px;
+    aspect-ratio: 1/1;
+    margin-right: 40px;
+}
+
+.btn-download {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    margin: auto;
+}
+
+.loader {
+    position: absolute;
+    width: 550px;
+    height: 366px;
+    background-color: rgba(0,0,0,.65);
+    backdrop-filter: blur(5px);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    
+}
+
+.loader:after {
+    content: "";
+    height: 48px;
+    width: 48px;
+    display: block;
+    border: 2px solid white;
+    border-radius: 48px;
+    border-right-color: transparent;
+    animation: infinite spinner .5s linear;
+}
+
+@keyframes spinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

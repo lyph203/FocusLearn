@@ -1,0 +1,131 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 16, 2023, 2:17:45 PM
+    Author     : khoa2
+*/
+
+.rating {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.course-header {
+    display: flex;
+    background-color: #2d2f31;
+    color: white;
+    padding: 2rem 4rem;
+}
+
+.course-title {
+    width: 70%;
+    float: left;
+}
+
+.course-img img{
+    width: 380px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.course-detail {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: space-between;
+    margin: 5rem auto;
+}
+
+.long-desctiption {
+    width: 70%;
+}
+
+.enroll {
+    border: 1px solid black;
+    height:300px;
+    width: 280px;
+    text-align: center;
+    padding: 20px;
+}
+
+.enroll input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    color: white;
+
+    background-color: #2d2f31;
+}
+
+.enroll input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+.enrolled-text {
+}
+
+.course-section {
+    margin-top: 20px;
+}
+
+.section-field {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.section-field input {
+    padding: 10px;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    flex: 1;
+    margin-right: 10px;
+    font-size: 16px;
+}
+
+#addSectionButton ,
+#addTagButton
+{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#deleteButton{
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+}
+#deleteButton:hover {
+    background-color: #0056b3;
+}
+
+#addSectionButton:hover {
+    background-color: #0056b3;
+}
+#addTagButton:hover{
+    background-color: #0056b3;
+}
+#submitSectionButton {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#submitSectionButton:hover {
+    background-color: #0056b3;
+}

@@ -1,0 +1,451 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 13, 2023, 11:48:59 AM
+    Author     : khoa2
+*/
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Work Sans', sans-serif;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+}
+
+.contain-navigation {
+    position: fixed;
+    width: 100%;
+    padding-top: 10px;
+    box-shadow: 0 2px 4px rgba(0,0,0,.08), 0 4px 12px rgba(0,0,0,.08);
+    padding-bottom: 10px;
+    background-color: #fff;
+    z-index: 2;
+}
+
+.navigation-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+}
+
+.logo img{
+    width: 50px;
+}
+
+.logo img:hover {
+    cursor: pointer;
+}
+
+.navigation-bar ul {
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navigation-bar ul li {
+    padding: 0 1.5rem;
+}
+
+.navigation-bar ul li a {
+    color: black;
+}
+
+.navigation-bar ul li a:hover {
+    color: rgb(122, 116, 116);
+}
+
+.account img{
+    width: 45px;
+    border-radius: 50%;
+}
+
+.account img:hover {
+    cursor: pointer;
+}
+
+.dropdown-menu {
+    border: 1px solid lightgrey;
+    position: absolute;
+    right: 15px;
+    top: 95%;
+    padding: 1rem 0;
+    background-color: #fff;
+    display: none;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid lightgrey;
+}
+
+#info img {
+    margin-right: 25px;
+    padding-bottom: 5px;
+}
+
+#option1 {
+    border-bottom: 1px solid lightgrey;
+}
+
+#option1, #option2 {
+    display: flex;
+    flex-direction: column;
+    font-size: 20px;
+}
+
+#option1 div, #option2 div {
+    padding: 0.5rem;
+    align-items: center;
+}
+
+#option1 a:hover, #option2 a:hover {
+    color: rgb(85, 82, 82);
+}
+
+.dropdown-menu ul {
+    flex-direction: column;
+    padding: 0;
+}
+
+.dropdown-menu li {
+    width: 100%;
+
+}
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+
+.search-bar input[type = "text"] {
+    font-size: 15px;
+    background: rgba(255, 255, 255, 0.2);
+    color: #717070;
+    height: 40px;
+    width: 100%;
+    padding: 0 0px 0 45px;
+    border: 1px solid rgb(143, 141, 141);
+    border-radius: 30px;
+    outline: none;
+}
+
+.search-bar input[type = "text"]:hover, .search-bar input[type = "text"]:focus {
+    border: 1px solid rgb(15, 14, 14);
+}
+
+.search-bar i{
+    position: relative;
+    left: -35px;
+}
+
+.contain-icons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 100px 0 100px;
+}
+
+.contain-icons i {
+    font-size: 40px;
+    color: #6b6c6d;
+}
+
+
+/*********** admin dashboard styling **********/
+.card{
+    background-color: #3B3131;
+    padding:20px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 8px 5px 5px #3B3131;
+}
+
+.statistic-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 12%;
+    width: 200%;
+}
+
+/* The sidebar menu */
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #3b9dc3;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+    z-index: 3;
+}
+
+/* The sidebar links */
+.sidebar a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 22px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color: #6C9BCF;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+    background-color: white;
+}
+
+.sidebar .side-header{
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-bottom: 8px;
+    color: #fff;
+}
+
+/* Position and style the close button (top right corner) */
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 2px;
+    font-size: 34px;
+    margin-left: 50px;
+}
+
+.sidebar .closebtn:hover {
+    background-color: #fff;
+}
+
+/* The button used to open the sidebar */
+.openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px 15px;
+    border: none;
+    color: #fff;
+    background-color:#fff;
+}
+
+.openbtn:hover {
+    color: #ECDAC9;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s; /* If you want a transition effect */
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+/************************** product table styling *********************************/
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    box-shadow: 0 2px 15px rgba(64, 64, 64, .7);
+    border-radius: 12px 12px 0 0;
+    margin-bottom: 50px;
+}
+
+.table td, .table th {
+    padding: .75rem;
+    vertical-align: middle;
+    border-top: 1px solid #dee2e6;
+}
+td,
+th {
+    padding: 10px 16px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+th {
+    background-color: #3b9dc3;
+    color: #fafafa;
+    font-family: 'Open Sans', Sans-serif;
+    font-weight: bold;
+}
+
+tr {
+    width: 100%;
+    background-color: #fafafa;
+    font-family: 'Montserrat', sans-serif;
+}
+
+tr:nth-child(even) {
+    background-color: #eeeeee;
+}
+
+/*Pagination css*/
+.pagination-container{
+    display: flex;
+    flex:0.9;
+}
+
+.pagination {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+.redirect{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.pagination a {
+    text-decoration: none;
+    margin: 0 5px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pagination a:hover {
+    background-color: #f0f0f0;
+}
+
+.pagination .active {
+    background-color: #007bff;
+    color: #fff;
+}
+
+.pagination .prev-next {
+    font-weight: bold;
+}
+
+.pagination .dots {
+    margin: 0 5px;
+}
+
+.page {
+    border-radius: 5px;
+    padding: 5px 10px;
+    color: black;
+    margin: 0 10px;
+}
+
+.page-btn {
+    border: 1px solid lightgrey;
+    padding: 1rem 1.2rem;
+    border-radius: 55px;
+    background-color: #fff;
+}
+
+.page-btn:hover {
+    background-color: #f1f0f0;
+}
+
+.page:hover {
+    border-bottom: 1px solid lightgrey;
+}
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.modal-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-title {
+    text-align: center;
+    margin: 0;
+}
+
+.modal-body {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.modal-footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: right;
+}
+
+.status-input {
+    border: none; 
+    text-align: center; 
+    background: none; 
+    outline: none; 
+    cursor: default; 
+}
+
+.status-active {
+    color: green; 
+}
+
+.status-banned {
+    color: gray; 
+}
+.status-pending {
+    color: blue;
+}
+
+.button-create{
+    align-items: center;
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+    border: 0;
+    border-radius: 8px;
+    box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+    box-sizing: border-box;
+    color: white;
+    display: flex;
+    font-family: Phantomsans, sans-serif;
+    font-size: 20px;
+    justify-content: center;
+    line-height: 1em;
+    max-width: 100%;
+    min-width: 140px;
+    padding: 19px 24px;
+    text-decoration: none;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    cursor: pointer;
+}

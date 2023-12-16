@@ -1,0 +1,52 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/JSP_Servlet/CascadeStyleSheet.css to edit this template
+*/
+/* 
+    Created on : Oct 21, 2023, 11:10:06 PM
+    Author     : khoa2
+*/
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+.modal-header {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.modal-title {
+    text-align: center;
+    margin: 0;
+}
+
+.modal-body {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+
+.modal-footer {
+    background-color: #f4f4f4;
+    padding: 10px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    text-align: right;
+}
+
+.custom-modal .modal-dialog {
+    width: 2280px;
+    height: 700px;
+}
+
+.custom-modal .modal-content {
+    height: 100%;
+}
+
+.custom-modal .modal-body {
+    height: 90%;
+    overflow-y: auto;
+}

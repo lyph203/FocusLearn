@@ -1,0 +1,68 @@
+.rating {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.course-header {
+    display: flex;
+    background-color: #2d2f31;
+    color: white;
+    padding: 2rem 4rem;
+}
+
+.course-title {
+    width: 70%;
+    float: left;
+}
+
+.course-img img{
+    width: 380px;
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.course-detail {
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+}
+
+.long-desctiption {
+    width: 70%;
+    margin-right: 50px;
+}
+
+.enroll {
+    border: 1px solid black;
+    height:500px;
+    width: 280px;
+    text-align: center;
+    padding: 20px;
+}
+
+.author {
+    font-weight: 700;
+    font-size: 1.6rem;
+    color: black;
+}
+
+.enroll input[type="submit"] {
+    width: 100%;
+    padding: 15px;
+    color: white;
+    
+    background-color: #2d2f31;
+}
+
+.enroll input[type="submit"]:hover {
+    cursor: pointer;
+    background-color: black;
+}
+
+ .enrolled-text {
+        
+    }
